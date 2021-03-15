@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Title</title>
+    <link rel="stylesheet" th:href="@{/style.css}"/>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css"/>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+<form method="post" action="/pgredirect">
+    <div class="container register">
+        <div class="row">
+            <div class="col-md-5 register-left">
+                <img src="https://i.ibb.co/QYzB4gn/paytm-logo.png" alt=""/>
+                <h3>Welcome</h3>
+                <p>Designed BY Arun Kumar Sharma Paytm Gateway App with Spring Boot</p>
+            </div>
+            <div class="col-md-7 register-right">
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                        <h3 class="register-heading">Welcome to Paytm Payment</h3>
+                        <div class="row register-form">
+                            <div class="col-md-10">
+                                <div class="input-group input-group mb-3 form-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="input-Group-sizing">Order ID</span>
+                                    </div>
+                                    <input id="ORDER_ID" tabindex="1" maxlength="20" size="20"
+                                           name="ORDER_ID" autocomplete="off" class="form-control" >
+                                </div>
+                                <div class="input-group input-group mb-3 form-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="input-Group-sizing">Customer ID</span>
+                                    </div>
+                                    <input type="text" class="form-control" value=""
+                                           name="CUST_ID"/>
+                                </div>
+                                <div class="input-group input-group mb-3 form-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="input-Group-sizing">INDUSTRY TYPE ID</span>
+                                    </div>
+                                    <input type="text" class="form-control" value=""
+                                           name="INDUSTRY_TYPE_ID"/>
+                                </div>
+                                <div class="input-group input-group mb-3 form-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="input-Group-sizing">Channel</span>
+                                    </div>
+                                    <input type="text" class="form-control" value=""
+                                           name="CHANNEL_ID"/>
+                                </div>
+                                <div class="input-group input-group mb-3 form-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="input-Group-sizing">Amount</span>
+                                    </div>
+                                    <input type="text" class="form-control" value=""
+                                           name="TXN_AMOUNT"/>
+                                </div>
+<!--                                  <input type="submit" class="btnRegister"  value="Pay with Paytm"/>-->
+                                <button type="submit" class="btn btn-primary btn-lg btn-block" style="align : center">Pay with Paytm</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</form>
+</body>
+</html>
